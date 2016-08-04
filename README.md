@@ -18,4 +18,39 @@
 
   ```$ curl -i http://localhost:5000/doctors```
 
-  
+#### API calls
+- Get all doctors
+
+  HTTP Method : ```GET```
+
+  URI : ```API_endpoint/doctors/```
+-  Get a doctor
+
+  HTTP Method : ```GET```
+
+  URI : ```API_endpoint/doctors/<doctor_id>/```
+- Create a doctor
+
+  - HTTP Method : ```POST```
+
+  - URI : ```API_endpoint/doctors/```
+
+  - Body : json in the following properties.
+    - name (Name of the Doctor)
+    - qualifications (Qualifations of the doctor)
+    - contact (Contact number for doctor)
+    - city (City where doctor is)
+    - location (Locality in the area)
+
+
+- Update a doctor
+  - HTTP Method : ```PUT```
+
+  - URI : ```API_endpoint/doctors/<doctor_id>/```
+
+  - body: json with any of the property to change
+
+- Delete a doctor
+  - HTTP Method : ```DELETE```
+
+  - URI : ```API_endpoint/doctors/<doctor_id>/```
